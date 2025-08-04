@@ -4158,35 +4158,5 @@ input, select, textarea {
 
 	}
 
-/* Force images to appear in circles */
 
 
-.intro-text {
-    font-style: italic;
-    font-size: 0.85rem;
-    font-family: 'Georgia', 'Times New Roman', serif;
-    text-transform: none !important;
-}
-
-
-/* Make the image circular */
-.image.image-hover-pop img {
-    width: 250px !important;
-    height: 220px !important;
-    border-radius: 50%;
-  object-fit: cover; /* crop image nicely */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;    /* removes inline image spacing issues */
-  margin: 0 auto;    /* center if needed */
-}
-
-/* Hover pop effect on the anchor wrapping the image */
-.image-hover-pop:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-
-}
-.content {
-    text-align: left;
-}
