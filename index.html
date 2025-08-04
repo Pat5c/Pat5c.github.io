@@ -2,216 +2,242 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Patience Buxton Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Add your CSS link or styles here -->
+  <title>Your Portfolio</title>
+  <style>
+    /* Paste your CodePen CSS here */
+    /* Force images to appear in circles */
+
+
+.intro-text {
+    font-style: italic;
+    font-size: 0.85rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-transform: none !important;
+}
+
+
+/* Make the image circular */
+.image.image-hover-pop img {
+    width: 250px !important;
+    height: 220px !important;
+    border-radius: 50%;
+  object-fit: cover; /* crop image nicely */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;    /* removes inline image spacing issues */
+  margin: 0 auto;    /* center if needed */
+}
+
+/* Hover pop effect on the anchor wrapping the image */
+.image-hover-pop:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+}
+.content {
+    text-align: left;
+}
+  </style>
 </head>
 <body>
+  <!-- Paste your CodePen HTML here -->
+  
+   <!-- 🔗 Add your contact / social links here -->
+        <ul style="list-style: none; padding: 0; display: flex; gap: 1rem; justify-content: center;">
+            <li><a href="www.linkedin.com/in/patience-buxton-msc" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a></li>
+            <li><a href="mailto:patiencebuxton9@gmail.com">Email</a></li>
+        </ul>
+    </div>
+</section>
 
-  <!-- Header -->
-  <header id="header" class="alt">
+<!-- Header -->
+<header id="header" class="alt">
     <h1><a href="#">Solid State</a></h1>
     <nav>
-      <!-- Navigation items if any -->
     </nav>
-  </header>
+</header>
 
-  <!-- Social Links -->
-  <section id="social-links" style="text-align: center; margin: 1rem 0;">
-    <ul style="list-style: none; padding: 0; display: flex; gap: 1rem; justify-content: center;">
-      <li><a href="https://www.linkedin.com/in/patience-buxton-msc" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="mailto:patiencebuxton9@gmail.com">Email</a></li>
-    </ul>
-  </section>
-
-  <!-- Banner -->
-  <section id="banner">
+<!-- Menu -->
+<nav id="menu">
     <div class="inner">
-      <h2>PATIENCE BUXTON</h2>
-      <p class="intro-text">
-        Welcome to my Portfolio! I will showcase some of the real-world, insight-rich Data Science projects I have worked on (or am currently working on), using tools like Python, R or SQL. 
-        As a data-driven problem solver, this Portfolio is designed to reflect both my technical growth and my ability to drive impact: from NLP, ML applications and predictive modeling to end-to-end data pipelines and ETL workflows; 
-        from A/B testing and statistical analysis to EDA and interactive analytical dashboards. Each project is curated to demonstrate my skills as a Data Scientist. Thank you for visiting my Portfolio.
-      </p>
+        <a href="#" class="close">Close</a>
+    </div>
+</nav>
+
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>PATIENCE BUXTON</h2>
+        <p class="intro-text">
+            Welcome to my Portfolio! I will showcase some of the real-world, insignt-rich Data Science projects I have worked on (or currently working on), using tools like Python, R or SQL. As a data-driven problem solver, this Portfolio is designed to reflect both my technical growth and my ability to drive impact: from NLP, ML applications and predictive modeling to end-to-end data pipelines and ETL workflows; from A/B testing and statistical analysis to EDA and interactive analytical dashboards. Eeach project is curated to demonstrate my skills as a Data Scientist. Thank you for visiting my Portfolio. 
+        </p>
+        </ul>
+    </div>
+</section>
+
+<!-- Wrapper -->
+<section id="wrapper">
+
+  <section id="one" class="wrapper spotlight style1">
+    <div class="inner">
+      <!-- Make sure to wrap the image inside the anchor if you want it clickable -->
+      <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/D3SDOAK.jpeg" alt="Merger & Acquisition" />
+      </a>
+
+      <div class="content">
+        <h2 class="major">Merger & Acquisition Success Prediction</h2>
+        <p>
+          This project leverages Machine Learning and Natural Language Processing (NLP) to enhance the prediction of successful M&A deal completions. Using Python, I built and benchmarked multiple classification models (Logistic Regression, Random Forest, Neural Networks, Decision Trees, SVM) on structured financial datasets. In parallel, I conducted sentiment analysis on pre-announcement news and rumors using VADER and TextBlob to extract market sentiment features. These, were integrated into a hybrid predictive model, combining financial and textual data: this approach improved classification performance, offering more reliable forecasts of M&A outcomes and highlighting key financial and sentiment drivers behind deal success.
+        </p>
+        <a href="https://github.com/Pat5c/PREDICTIONS-ON-MERGERS-AND-ACQUISITIONS-SUCCESSFUL-DEAL-COMPLETION-an-analysis-with-ML-and-NLP" class="special">Learn more</a>
+      </div>
     </div>
   </section>
 
-  <!-- Wrapper -->
-  <section id="wrapper">
-
-    <!-- Project 1 -->
-    <section id="one" class="wrapper spotlight style1">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/D3SDOAK.jpeg" alt="Merger & Acquisition" />
-        </a>
-        <div class="content">
-          <h2 class="major">Merger & Acquisition Success Prediction</h2>
-          <p>
-            This project leverages Machine Learning and Natural Language Processing (NLP) to enhance the prediction of successful M&A deal completions. Using Python, I built and benchmarked multiple classification models (Logistic Regression, Random Forest, Neural Networks, Decision Trees, SVM) on structured financial datasets. In parallel, I conducted sentiment analysis on pre-announcement news and rumors using VADER and TextBlob to extract market sentiment features. These were integrated into a hybrid predictive model, combining financial and textual data: this approach improved classification performance, offering more reliable forecasts of M&A outcomes and highlighting key financial and sentiment drivers behind deal success.
-          </p>
-          <a href="https://github.com/Pat5c/PREDICTIONS-ON-MERGERS-AND-ACQUISITIONS-SUCCESSFUL-DEAL-COMPLETION-an-analysis-with-ML-and-NLP" class="special" target="_blank" rel="noopener noreferrer">Learn more</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Project 2 -->
+</section>
     <section id="two" class="wrapper alt spotlight style2">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/JdqVX1s.png" alt="AI Chatbot for Internal Training" />
-        </a>
-        <div class="content">
-          <h2 class="major">AI Chatbot for Internal Training</h2>
-          <p>
-            I am building an AI Chatbot trained to provide knowledge articles and immediate answers to New Joiners working in a new Logistics Team. Final project coming soon!
-          </p>
+        <div class="inner">
+      <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/JdqVX1s.png" alt="AI Chatbot for Internal Training" />
+      </a>
+            <div class="content">
+                <h2 class="major">AI Chatbot for Internal Training</h2>
+                <p>I am building an AI Chatbot trained to provide knowledge articles and immediate answers to New Joiners working in a new Logistics Team. Final project coming soon! </p>
+                
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Project 3 -->
     <section id="three" class="wrapper spotlight style3">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/GxgRvMc.jpeg" alt="Artwork Dataset Cleaning, Integration & Analysis with Python" />
-        </a>
-        <div class="content">
-          <h2 class="major">Artwork Dataset Cleaning, Integration & Analysis with Python</h2>
-          <p>
-            Worked on integrating, cleaning, and analyzing a complex artworks dataset. Identified data limitations, inconsistencies, and prepared it for public-facing consumption. Conducted exploratory data analysis (EDA) and produced visual insights to reveal patterns across institutions, artists, and artwork types.
-          </p>
-          <a href="https://github.com/Pat5c/Artwork-Dataset-Cleaning-Integration-Analysis-with-Python" class="special" target="_blank" rel="noopener noreferrer">Learn more</a>
+        <div class="inner">
+          
+           <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/GxgRvMc.jpeg" alt="Artwork Dataset Cleaning, Integration & Analysis with Python" />
+      </a>
+            <div class="content">
+                <h2 class="major">Artwork Dataset Cleaning, Integration & Analysis with Python</h2>
+                <p>Worked on integrating, cleaning, and analyzing a complex artworks dataset. Identified data limitations, inconsistencies, and prepared it for public-facing consumption. Conducted exploratory data analysis (EDA) and produced visual insights to reveal patterns across institutions, artists, and artwork types. </p>
+                <a href="https://github.com/Pat5c/Artwork-Dataset-Cleaning-Integration-Analysis-with-Python" class="special">Learn more</a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Project 4 -->
-    <section id="four" class="wrapper alt spotlight style2">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/NMrA9Cy.jpeg" alt="Product & Business Analysis" />
-        </a>
-        <div class="content">
-          <h2 class="major">Products & Sales Performance: A Business Analysis</h2>
-          <p>
-            This interactive Google Looker Studio dashboard analyzes sales performance across Australian states from 2018 to 2020. Key insights include quarterly and monthly trends, state-wise comparisons, and best-selling products by region. The analysis highlights how sales patterns vary across states and over time, supporting data-driven decisions for targeted sales strategies.
-          </p>
-          <a href="https://github.com/Pat5c/Products-and-Sales-Performance-A-Business-Analysis" class="special" target="_blank" rel="noopener noreferrer">Learn more</a>
+<!-- More Projects -->
+
+</section>
+    <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+      <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/NMrA9Cy.jpeg" alt="Product & Business Analysis" />
+      </a>
+            <div class="content">
+                <h2 class="major">Products & Sales Performance: A Business Analysis</h2>
+                <p>This interactive Google Looker Studio dashboard analyzes sales performance across Australian states from 2018 to 2020. Key insights include quarterly and monthly trends, state-wise comparisons, and best-selling products by region. The analysis highlights how sales patterns vary across states and over time, supporting data-driven decisions for targeted sales strategies. </p>
+              <a href="https://github.com/Pat5c/Products-and-Sales-Performance-A-Business-Analysis" class="special">Learn more</a>
+            </div>
         </div>
-      </div>
+                
+            </div>
+        </div>
     </section>
 
-    <!-- Project 5 -->
-    <section id="five" class="wrapper spotlight style3">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/riiD3dj.jpeg" alt="Fake vs True News Detection with NLP" />
-        </a>
-        <div class="content">
-          <h2 class="major">Fake vs True COVID-Related News Detection with NLP</h2>
-          <p>
-            Developed and evaluated binary classification models to detect fake vs. real COVID-19 news using a balanced dataset of 1,164 articles. Achieved 94% accuracy with Multinomial Naïve Bayes and 100% accuracy with a Passive-Aggressive Classifier on the test set. Explored model performance through confusion matrices and validated the robustness of these approaches for text-based classification tasks.
-          </p>
-          <a href="https://github.com/Pat5c/Fake-vs-True-COVID-Related-News-Detection-with-NLP" class="special" target="_blank" rel="noopener noreferrer">Learn more</a>
+    <section id="three" class="wrapper spotlight style3">
+        <div class="inner">
+          
+           <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/riiD3dj.jpeg" alt="Fake vs True News Detection with NLP" />
+      </a>
+            <div class="content">
+                <h2 class="major">Fake vs True COVID-Related News Detection with NLP</h2>
+                <p>Developed and evaluated binary classification models to detect fake vs. real COVID-19 news using a balanced dataset of 1,164 articles. Achieved 94% accuracy with Multinomial Naïve Bayes and 100% accuracy with a Passive-Aggressive Classifier on the test set. Explored model performance through confusion matrices and validated the robustness of these approaches for text-based classification tasks. </p>
+                <a href="https://github.com/Pat5c/Fake-vs-True-COVID-Related-News-Detection-with-NLP" class="special">Learn more</a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Project 6 -->
-    <section id="six" class="wrapper alt spotlight style2">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/HRW48RY.jpeg" alt="House Price Prediction with Regression and Support Vector Machines (SVM) with R" />
-        </a>
-        <div class="content">
-          <h2 class="major">House Price Prediction with Regression and Support Vector Machines (SVM) with R</h2>
-          <p>
-            This project investigates the relationship between house prices and key predictors using Linear Regression, Polynomial Regression, and Support Vector Machine (SVM) models.
-            Initial linear regression assumptions (linearity, homoscedasticity) were violated, so a Polynomial Regression was employed, showing statistically significant relationships between key predictors. However, the model explained only ~8.7% of price variance (R² = 0.087) on the full dataset. After removing outliers (houses > $500k), the model performance slightly improved (R² = 12.7%).
-            To further improve performance, SVM regression was applied on the cleaned dataset, achieving the best results with R² = 25%, outperforming both the linear and polynomial models.
-          </p>
-          <a href="https://github.com/Pat5c/House-Price-Prediction-with-Regression-and-Support-Vector-Machines-SVM/tree/main" class="special" target="_blank" rel="noopener noreferrer">Learn more</a>
+<!-- More Projects 2 -->
+
+</section>
+    <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+      <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/HRW48RY.jpeg" alt="House Price Prediction with Regression and Support Vector Machines (SVM) with R " />
+      </a>
+            <div class="content">
+                <h2 class="major">House Price Prediction with Regression and Support Vector Machines (SVM) with R </h2>
+                <p> This project investigates the relationship between house prices and key predictors using Linear Regression, Polynomial Regression, and Support Vector Machine (SVM) models.
+Initial linear regression assumptions (linearity, homoscedasticity) were violated, so a Polynomial Regression was employed, showing statistically significant relationships between key predictors. However, the model explained only ~8.7% of price variance (R² = 0.087) on the full dataset. After removing outliers (houses > $500k), the model performance slightly improved (R² = 12.7%).
+To further improve performance, SVM regression was applied on the cleaned dataset, achieving the best results with R² = 25%, outperforming both the linear and polynomial models. </p>
+                <a href="https://github.com/Pat5c/House-Price-Prediction-with-Regression-and-Support-Vector-Machines-SVM/tree/main" class="special">Learn more</a>
+            </div>
         </div>
-      </div>
+    </section>
+                
+            </div>
+        </div>
     </section>
 
-    <!-- Project 7 -->
-    <section id="seven" class="wrapper spotlight style3">
-      <div class="inner">
-        <a href="#" class="image image-hover-pop">
-          <img src="https://i.imgur.com/CofaZLq.jpeg" alt="Humanitarian Project" />
-        </a>
-        <div class="content">
-          <h2 class="major">Skin Health Equity Mapping</h2>
-          <p>
-            This project aims to identify which skin conditions disproportionately affect specific marginalized groups, and which conditions are under-served in product availability or care. Customer Segmentation will also be completed, with the creation of an African sourced Skin Ingredients Recommendation Engine.
-            The project objective is to raise awareness of racial or socioeconomic disparities in dermatological care and to highlight the benefits of African (Ghanian) sourced skincare botanicals. Final project coming soon!
-          </p>
+    <section id="three" class="wrapper spotlight style3">
+        <div class="inner">
+          
+           <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/CofaZLq.jpeg" alt="Humanitarian Project" />
+      </a>
+            <div class="content">
+                <h2 class="major">Skin Health Equity Mapping</h2>
+                <p>
+This project aims to identify which skin conditions disproportionately affect specific marginalized groups, and which conditions are under-served in product availability or care. Customer Segmentation will also be completed, with the creation of an African sourced Skin Ingredients Recommendation Engine.
+The project objective is to: raise awareness of racial or socioeconomic disparities in dermatological care and to highlight the benefits of African (Ghanian) sourced skincare botanicals. Final project coming soon!  </p>
+                
         </div>
-      </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="wrapper">
-      <div class="inner">
-        <h2 class="major">Get in Touch</h2>
+      
+      </section>
+    <section id="two" class="wrapper alt spotlight style2">
+        <div class="inner">
+      <a href="#" class="image image-hover-pop">
+        <img src="https://i.imgur.com/HRW48RY.jpeg" alt="House Price Prediction with Regression and Support Vector Machines (SVM) with R " />
+      </a>
+            <div class="content">
+                <h2 class="major">Optimizing Marketing Campaingns: A/B Testing with ETL Pipeline in SQL </h2>
+                <p> This project simulates a scenario where 2 versions of an email campaing (Group A vs B) in a marketing team, are evaluated to determine which performs better. SQL is used for ETL and Python for statistical analysis. Final Project coming soon! </p>
+                
+            </div>
+        </div>
+    </section>
+                
+            </div>
+        </div>
+    </section>
+   
+<!-- Footer -->
+<section id="footer">
+    <div class="inner">
+        <h2 class="major">Get in touch</h2>
+        
         <form method="post" action="#">
-          <div class="fields">
-            <div class="field">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Your name" required />
+            <div class="fields">
+                <div class="field">
+                    <label 
+                           
+                           
+                   name="message" id="message" rows="4"></textarea>
+                </div>
             </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Your email" required />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" rows="4" placeholder="Your message" required></textarea>
-            </div>
-          </div>
-          <ul class="actions">
-            <li><input type="submit" value="Send" class="button" /></li>
-          </ul>
-        </form>
-
-        <!-- Contact Info -->
-        <ul class="contact" style="list-style: none; padding: 0;">
-          <li class="icon solid fa-home">
-            <h3>Address</h3>
-            Spain<br />
-            United Kingdom
-          </li>
-          <li class="icon solid fa-phone">
-            <h3>Tel</h3>
-            (+44) 7598643779<br />
-            (+34) 670488623
-          </li>
-          <li class="icon solid fa-envelope">
-            <h3>Email</h3>
-            <a href="mailto:patiencebuxton9@gmail.com">patiencebuxton9@gmail.com</a>
-          </li>
-          <li class="icon brands fa-linkedin">
-            <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/patience-buxton-msc" target="_blank" rel="noopener noreferrer">patience-buxton-msc</a>
-          </li>
-          <li class="icon brands fa-github">
-            <h3>GitHub</h3>
-            <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener noreferrer">YOUR-GITHUB</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer" style="text-align: center; padding: 1rem; background-color: #222; color: #eee;">
-    &copy; 2024 Patience Buxton. All rights reserved.
-  </footer>
-
+            <ul class="actions">
+               
+        <ul class="contact">
+            <li class="icon solid fa-home"><h3>Address</h3>Spain<br />United Kingdom</li>
+            <li class="icon solid fa-phone"><h3>Tel</h3>(+44) 7598643779<br/> (+34) 670488623</li>
+            <li class="icon solid fa-envelope"><a href="#"><h3>EMAIL</h3>patiencebuxton9@gmail.com</a></li>
+          <li class="icon brands fa-linkedin"><a href="#"><h3>LINKEDIN</h3>www.linkedin.com/in/patience-buxton-msc</a></li>
+          <li class="icon brands fa-linkedin"><a href="#"><h3>GITHUB</h3>X</a></li>      
+</section>  
+  <script>
+    // Paste your CodePen JavaScript here
+  </script>
 </body>
 </html>
+
