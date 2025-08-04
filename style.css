@@ -1,10 +1,10 @@
 /* At the end of main.css */
 
 .intro-text {
-    font-style: italic;
-    font-size: 0.85rem;
-    font-family: 'Georgia', 'Times New Roman', serif;
-    text-transform: none !important;
+  font-style: italic !important;
+  font-size: 0.85rem !important;
+  font-family: 'Georgia', 'Times New Roman', serif !important;
+  text-transform: none !important;
 }
 
 .image.image-hover-pop img {
