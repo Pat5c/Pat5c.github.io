@@ -1,0 +1,24 @@
+/* Circular images with hover effect */
+.image.image-hover-pop img {
+  width: 250px !important;
+  height: 220px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+.image-hover-pop:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.intro-text {
+  font-style: italic;
+  font-size: 0.85rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-transform: none !important;
+}
+.content {
+  text-align: left;
+}

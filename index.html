@@ -2,61 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Patience Buxton Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patience Buxton - Data Science Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://i.imgur.com/D3SDOAK.jpeg" />
 </head>
 <body>
-  <header>
-    <h1>Patience Buxton</h1>
-    <p>Data Analyst | Aspiring Data Scientist</p>
-  </header>
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm Patience Buxton, a data analyst with a passion for data science. I specialize in uncovering insights, building predictive models, and delivering data-driven solutions.</p>
-
-    <h2>Projects</h2>
+  <section id="social-links">
     <ul>
-      <li><a href="https://github.com/Pat5c/House-Price-Prediction-with-Regression-and-Support-Vector-Machines-SVM" target="_blank">House Price Prediction (Regression & SVM)</a></li>
-      <!-- Add more projects as needed -->
+      <li><a href="https://www.linkedin.com/in/patience-buxton-msc" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/Pat5c" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:patiencebuxton9@gmail.com">Email</a></li>
     </ul>
   </section>
-  <footer>
-    <p>&copy; 2025 Patience Buxton</p>
+  <header id="header" class="alt">
+    <h1>Patience Buxton</h1>
+  </header>
+  <section id="banner">
+    <div class="inner">
+      <h2>Welcome to my Portfolio!</h2>
+      <p class="intro-text">
+        I will showcase some of the real-world, insight-rich Data Science projects I have worked on (or currently working on), using tools like Python, R or SQL. As a data-driven problem solver, this Portfolio is designed to reflect both my technical growth and my ability to drive impact: from NLP, ML applications and predictive modeling to end-to-end data pipelines and ETL workflows; from A/B testing and statistical analysis to EDA and interactive analytical dashboards. Each project is curated to demonstrate my skills as a Data Scientist. Thank you for visiting.
+      </p>
+    </div>
+  </section>
+  <section id="wrapper">
+    <section class="wrapper spotlight style1">
+      <div class="inner">
+        <a href="#" class="image image-hover-pop">
+          <img src="https://i.imgur.com/D3SDOAK.jpeg" alt="Merger & Acquisition" />
+        </a>
+        <div class="content">
+          <h2 class="major">Merger & Acquisition Success Prediction</h2>
+          <p>
+            This project leverages Machine Learning and Natural Language Processing (NLP) to enhance the prediction of successful M&A deal completions. Using Python, I built and benchmarked multiple classification models (Logistic Regression, Random Forest, Neural Networks, Decision Trees, SVM) on structured financial datasets. In parallel, I conducted sentiment analysis on pre-announcement news and rumors using VADER and TextBlob to extract market sentiment features. These, were integrated into a hybrid predictive model, combining financial and textual data: this approach improved classification performance, offering more reliable forecasts of M&A outcomes and highlighting key financial and sentiment drivers behind deal success.
+          </p>
+          <a href="https://github.com/Pat5c/PREDICTIONS-ON-MERGERS-AND-ACQUISITIONS-SUCCESSFUL-DEAL-COMPLETION-an-analysis-with-ML-and-NLP" class="special" target="_blank" rel="noopener">Learn more</a>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper alt spotlight style2">
+      <div class="inner">
+        <a href="#" class="image image-hover-pop">
+          <img src="https://i.imgur.com/JdqVX1s.png" alt="AI Chatbot for Internal Training" />
+        </a>
+        <div class="content">
+          <h2 class="major">AI Chatbot for Internal Training</h2>
+          <p>I am building an AI Chatbot trained to provide knowledge articles and immediate answers to New Joiners working in a new Logistics Team. Final project coming soon!</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper spotlight style3">
+      <div class="inner">
+        <a href="#" class="image image-hover-pop">
+          <img src="https://i.imgur.com/GxgRvMc.jpeg" alt="Artwork Dataset Cleaning, Integration & Analysis with Python" />
+        </a>
+        <div class="content">
+          <h2 class="major">Artwork Dataset Cleaning, Integration & Analysis with Python</h2>
+          <p>Worked on integrating, cleaning, and analyzing a complex artworks dataset. Identified data limitations, inconsistencies, and prepared it for public-facing consumption. Conducted exploratory data analysis (EDA) and produced visual insights to reveal patterns across institutions, artists, and artwork types.</p>
+          <a href="https://github.com/Pat5c/Artwork-Dataset-Cleaning-Integration-Analysis-with-Python" class="special" target="_blank" rel="noopener">Learn more</a>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer id="footer">
+    <div class="inner">
+      <h2>Get in Touch</h2>
+      <ul class="contact">
+        <li><strong>Address:</strong> Spain, United Kingdom</li>
+        <li><strong>Phone:</strong> (+44) 7598643779, (+34) 670488623</li>
+        <li><strong>Email:</strong> <a href="mailto:patiencebuxton9@gmail.com">patiencebuxton9@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/patience-buxton-msc" target="_blank" rel="noopener">patiencebuxton9</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Pat5c" target="_blank" rel="noopener">Pat5c</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
